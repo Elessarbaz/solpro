@@ -1,0 +1,203 @@
+/***** GENERAL SETTINGS, HEADER AND FOOTER *****/
+h1, h2, h3, h4, h5, h6, label, button, p {
+  font-family: 'Play', sans-serif;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #6e476e;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+  background-color: #ccc;
+  height: 100%;
+	margin-bottom: 90px;
+}
+
+.carousel {
+  padding: 0;
+}
+
+header {
+  background-color: #ddd;
+}
+
+header .pull-left {
+  margin-top: 1.75%;
+}
+
+img[src*="logo"] { /*логотип на header'е */
+  max-height: 100px;
+}
+
+h1 {
+  font-weight: bold;
+  color: #6e476e;
+}
+
+header h1 {
+  font-size: 4.5rem;
+  margin-top: 5%;
+}
+
+.navbar{
+  border-radius: 0;
+  font: 1.5rem bold 'Play', sans-serif;
+  margin-bottom: 0;
+}
+
+
+.footer {
+  background-color: #1b1b1b;
+	bottom: 0;
+  border-color: #252525;
+  color: #aaa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 90px;
+  margin-top: 20px;
+  padding: 1em 0;
+  position: absolute;
+  width: 100%;
+}
+
+/***** INDEX PAGE *****/
+
+/* slider */
+.carousel-caption {
+text-shadow: 2px 2px 4px #000000,
+              -2px -2px 4px #000000;;
+}
+/* end slider */
+
+.text {
+  line-height: 1.5;
+  padding: 0;
+  text-align: justify;
+}
+
+.soloto_type_color {
+  text-align: center;
+  color: #6e476e;
+  font-weight: bold;
+}
+
+/***** CONTACTS PAGE *****/
+.form-control,
+.btn {
+  border-radius: 0; /* убираем родные скругления форм и кнопок Bootstrap'а */
+}
+
+.form-control:focus { /* фиолетовая подцветка при фокусе */
+  border-color: rgb(136, 28, 119);
+  box-shadow: 0 1px 1px rgba(121, 12, 100, 0.4) inset,
+              0 0 8px rgba(121, 12, 100, 0.4);
+}
+
+textarea {
+  resize: none;
+}
+
+.icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 2%;
+  margin-bottom: 3%;
+}
+
+.btn:focus {
+  outline: none;
+  border-color: rgb(121, 12, 100);
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* modal window */
+.modal .modal-dialog.modal-sm {
+    margin-top: 100px;
+}
+
+.modal .modal-content {
+    border-radius: 0;
+}
+
+.modal .btn {
+    background-color: #6e476e;
+    color: #fff;
+}
+/* end modal window */
+
+/***** MEDIA QUERIES *****/
+
+@media screen and (max-width: 768px) {
+
+  header h1  {
+    display: inline-block;
+    font-size: 2.5rem;
+    margin-top: 4.5%;
+    margin-right: 1%;
+  }
+
+  h2, h3  {
+    font-size: 1.75rem;
+  }
+
+  h4  {
+    font-size: 1.5rem;
+  }
+
+  img[src*="logo"] { /*логотип на header'е */
+    max-height: 50px;
+    margin-left: 10%;
+    margin-top: 3%;
+  }
+
+/***** CONTACTS PAGE *****/
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    margin-bottom: 60px;
+  }
+
+  h1,
+  header h1 {
+    margin-top: 7%;
+    font-size: 1.75rem;
+  }
+  img[src*="logo"] {
+    max-height: 40px;
+  }
+
+  .footer {
+    font-size: 1rem;
+    height: 60px;
+  }
+}
