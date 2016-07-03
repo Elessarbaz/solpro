@@ -9,10 +9,6 @@ a:hover {
   color: #6e476e;
 }
 
-a:hover {
-  font-weight: bold;
-}
-
 html {
 	position: relative;
 	min-height: 100%;
