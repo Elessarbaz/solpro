@@ -48,7 +48,9 @@ header h1 {
 
 .navbar{
   border-radius: 0;
-  font: 1.5rem bold 'Play', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Play', sans-serif;
   margin-bottom: 0;
 }
 
