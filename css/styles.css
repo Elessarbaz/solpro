@@ -77,7 +77,14 @@ text-shadow: 2px 2px 4px #000000,
 }
 /* end slider */
 
+@media (min-width: 1200px) {
+  .container.container-text {
+    width: 960px;
+  }
+}
+
 .text {
+  font-size: 18px;
   line-height: 1.5;
   padding: 0;
   text-align: justify;
